@@ -1,44 +1,34 @@
 <template>
-  <h2>Galleria</h2>
-  <div v-if="Many">
-    <div class="container">
-      <div class="row">
-        <div
-          class="card p-3 m-3"
-          v-for="single of Many"
-          :key="single.id"
-          style="width: 18rem"
-        >
-          <img :src="single.img_url" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">{{ single.title }}</p>
-            <router-link :to="{ name: 'painting', params: { id: single.id } }">
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </router-link>
-          </div>
+   <div>
+    <h2>Gallery</h2>
+    <div id="shopcard" class="container">
+        <div v-if="Many">
+        <div class="row m-sm-0">
+            <Card></Card>
+            </div>
         </div>
-      </div>
+        <div v-else>
+            Loading...
+        </div>
     </div>
-  </div>
-  <div v-else>
-    Loading...
-  </div>
+    </div>
 </template>
 
 <script>
+import Card from '@/components/card.vue'
 export default {
-  data() {
-    return {
-        Many: []
-    };
-  },
-  mounted() {
-    fetch("http://localhost:3000/Many")
-      .then((res) => res.json())
-      .then((data) => (this.Many = data));
-  },
+    data() {
+        return {
+
+            Many: [
+                
+            ]
+        };
+    },
+    components:{ Card }
 };
 </script>
 
-<style></style>
+<style scoped>
+
+</style>

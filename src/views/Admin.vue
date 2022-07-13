@@ -2,26 +2,41 @@
   <h1>Admin</h1>
  <div v-if="Many">
 
-<table class="container table-bordered text-start">
+<table class="container">
 <thead>
-  <th class="col-md-1">id</th>
-  <th class="col-md-3">Title</th>
-  <th>hi</th>
-  <th>ahhh</th>
+  <th>Admin</th>
 </thead>
 <div v-for="single of Many" :key="single.id">
 <tbody>
-  <td class="col-md-3">
-     <img :src="single.img_url" class="card-img-top" alt="..." width="50rem" />
-  </td>
-  <td class="col-md-1">{{single.id}}</td>
-  <td class="col-md-3">{{single.title}}</td>
+  <td>{{single.title}}</td>
 </tbody>
 </div>
 </table>
 
 
+    <!-- <div class="container">
+     
+      <div class="row">
+          <div class="col-md-3">
+           <p>Admin</p>
+          </div>
 
+<div class="col-md-9">
+  <p>hi</p>
+  
+</div>
+
+        </div>
+
+  
+<div class="col-md-3">
+<p>{{single.title}}</p>
+</div>
+
+<div class="col-md-9">
+<p>{{single.id}}</p>
+</div>
+</div> -->
       </div>
  
   <div v-else>
