@@ -36,7 +36,7 @@ export default {
     top: 0;
     object-fit: cover;
     position: relative;
-    object-position: 0 5px;
+    object-position: 0 7px;
     margin: auto;
     align-items: center;
     width: 200px;

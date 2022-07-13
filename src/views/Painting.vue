@@ -7,9 +7,7 @@
      <h1 class="card-title">{{Many.title}}</h1>
      <ul class="list-group list-group-flush">
         <li class="list-group-item">Artist name: {{Many.artist}}</li>
-        <li class="list-group-item">Description: {{}}</li>
         <li class="list-group-item">Dimensions: {{Many.size}}</li>
-        <li class="list-group-item">Medium {{}}</li>
         <li class="list-group-item">Price: {{Many.price}}</li>
      </ul>
         <div class="card-body">

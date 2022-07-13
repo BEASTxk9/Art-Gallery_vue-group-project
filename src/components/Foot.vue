@@ -14,7 +14,7 @@
     <div class="footer-links">
       <router-link to="/">Home</router-link> |
       <router-link to="/About">About Us</router-link> |
-      <router-link to="/Contact">Contact Us</router-link>
+      <router-link to="/ContactForm">Contact Us</router-link>
     </div>
   </footer>
 </template>
@@ -29,7 +29,7 @@ export default {
 
 footer{
     bottom: 0;
-    position: relative;
+    margin-bottom: 0;
     padding-bottom: 20px;
 }
 .icons a{

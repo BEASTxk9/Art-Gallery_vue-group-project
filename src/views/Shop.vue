@@ -30,5 +30,7 @@ export default {
 </script>
 
 <style scoped>
-
+#shopcard{
+    width: 80%;
+}
 </style>

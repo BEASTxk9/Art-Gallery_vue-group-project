@@ -63,5 +63,31 @@ export default {
 </script>
 
 <style scoped>
-
+    .container{
+        margin-bottom: 230px;
+    }
+    @media only screen and (min-width:320px)  and (max-width: 321px) {
+        .row input{
+            margin-bottom: 10px;
+        }
+        .row1{
+            margin-bottom: -220px;
+        }
+}
+ @media only screen and (min-width:375px)  and (max-width: 376px) {
+        .row input{
+            margin-bottom: 10px;
+        }
+        .row1{
+            margin-bottom: -220px;
+        }
+}
+ @media only screen and (min-width:425px)  and (max-width: 426px) {
+        .row input{
+            margin-bottom: 10px;
+        }
+        .row1{
+            margin-bottom: -220px;
+        }
+}
 </style>

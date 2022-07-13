@@ -15,7 +15,7 @@
     <tr v-for="admin of Many" :key="admin.id">
       <th scope="row">{{admin.id}}</th>
       <td>{{admin.title}}</td>
-      <img :src="admin.img_url" class="card-img-top" alt="..."/>
+      <td><img :src="admin.img_url" class="card-img-top" alt="..."/></td>
       <td>{{admin.artist}}</td>
       <td>{{admin.size}}cm </td>
       <td>${{admin.price}}.00</td>
@@ -49,7 +49,8 @@ export default {
 <style scoped>
 img{
     width: 200px;
-    height: 200px;
+    height: 180px;
+    border-radius: 10px;
 }
 
 /* table {
@@ -73,4 +74,5 @@ td button{
     margin: 20px;
     justify-content: center;
 }
+
 </style>
