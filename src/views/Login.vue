@@ -33,12 +33,11 @@ export default {
     text-align: center;
     width: 40%;
     min-height: 50vh;
-background: #67595954;
-border-radius: 10px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(9.2px);
--webkit-backdrop-filter: blur(9.2px);
-
+    background: #67595954;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
 }
 input{
     position: relative;
