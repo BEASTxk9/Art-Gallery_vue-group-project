@@ -5,12 +5,12 @@
             <h5 class="card-title"></h5>
             <p class="card-text">{{ single.title }}</p>
              <router-link :to="{name:'painting' , params: { id: single.id }}">
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">View</a>
             </router-link>
         </div>
     </div>
 </template>
-
++++++
 <script>
 export default {
     data() {

@@ -6,11 +6,9 @@
 <script>
 import Navbar from './components/Navbar.vue';
 import Foot from './components/Foot.vue';
-
 export default {
-  components: { Navbar, Foot },
-  
-  
+  components: { Navbar, Foot},
+  name: 'App',
 }
 </script>
 <style>
