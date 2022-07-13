@@ -5,7 +5,7 @@
         <div v-if="Many">
         <div class="row m-sm-0">
             <Card></Card>
-            </div>
+        </div>
         </div>
         <div v-else>
             Loading...

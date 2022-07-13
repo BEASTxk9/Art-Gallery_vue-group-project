@@ -3,16 +3,19 @@ import router from '../router'
 
 export default createStore({
   state: {
-    user: null
-  },
-  getters: {
+    user: null,
+    art: []
   },
   mutations: {
     setUser(state, user){
       state.user = user
+    },
+    setArt(state, art){
+      state.art = art
     }
   },
   actions: {
+    // Login function
     login: async(context, payload) => {
       const response = await fetch(`http://localhost:3000/Users?email=${payload.email}&password=${payload.password}`,
       )
@@ -41,6 +44,7 @@ export default createStore({
       }
 
     },
+    // Register function
     register: async(context, payload) => {
       const response = await fetch(`http://localhost:3000/Users?email=${payload.email}`)
       .then((res) => res.json())
@@ -71,7 +75,19 @@ export default createStore({
         router.push({name: 'home'})
       });
       }
-
+    },
+    // Fetch Art function
+    getArt: async(context) => {
+      const response = await fetch(`http://localhost:3000/Many`).then((res) => res.json()).then((data) => {
+        return data
+      })
+      // Check if data is empty
+      if(response.length == 0){
+        alert('Server down')
+      }
+      else {
+        context.commit('setArt', response)
+      }
     }
   },
   modules: {

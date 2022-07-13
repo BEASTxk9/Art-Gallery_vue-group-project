@@ -13,7 +13,7 @@
         <li class="list-group-item">Price: {{Many.price}}</li>
      </ul>
         <div class="card-body">
-            <button>Buy now</button>
+            <button class="btn btn-primary">Add to Cart</button>
         </div>
         
  </div>
