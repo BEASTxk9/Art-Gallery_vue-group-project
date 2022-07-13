@@ -22,6 +22,9 @@ export default {
 nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
 }
 
 nav a.router-link-exact-active {
