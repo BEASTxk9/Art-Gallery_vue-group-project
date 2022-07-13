@@ -38,6 +38,16 @@ const routes = [
   
     component: () => import('../views/Contact.vue')
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('../views/Register.vue')
+  }
 ]
 
 const router = createRouter({
