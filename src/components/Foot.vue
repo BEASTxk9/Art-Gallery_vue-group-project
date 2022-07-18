@@ -10,12 +10,6 @@
       <div class="text-center py-2">© 2022 Copyright: Made with <a href=""><i  id="heart" class="bi bi-balloon-heart-fill"></i></a>by Monique,Shane,Ikhlaas,Yaseen
     </div>
     </div>
-    
-    <div class="footer-links">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/About">About Us</router-link> |
-      <router-link to="/ContactForm">Contact Us</router-link>
-    </div>
   </footer>
 </template>
 
@@ -25,17 +19,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 footer{
-    bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 20px;
+  margin-top: 110px;
 }
 .icons a{
   padding: 10px;
-}
-.footer-links{
-  color: black;
 }
 </style>
